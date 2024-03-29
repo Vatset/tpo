@@ -28,8 +28,6 @@ public class Captain extends Vogon {
     }
 
     public void scrollNotebook(int pages) {
-        for (int i = 0; i < pages; i++) {
-            notebook.scroll();
-        }
+        notebook.scroll(pages);
     }
 }

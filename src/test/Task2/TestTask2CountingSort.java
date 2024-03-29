@@ -53,4 +53,22 @@ public class TestTask2CountingSort {
         assertArrayEquals(expectedOutput, output);
     }
 
+    @Test
+    public void testCountSortSameNumbers() {
+        int[] arr = {6, 6, 6, 6, 6, 6};
+        int[] expectedOutput = {6, 6, 6, 6, 6, 6};
+        Task2CountingSort countSort = new Task2CountingSort(arr);
+        int[] output = countSort.countSort();
+        assertArrayEquals(expectedOutput, output);
+    }
+
+    @Test
+    public void testCountSortReversed() {
+        int[] arr = {20, 16, 11, 5, -3, -9};
+        int[] expectedOutput = {-9, -3, 5, 11, 16, 20};
+        Task2CountingSort countSort = new Task2CountingSort(arr);
+        int[] output = countSort.countSort();
+        assertArrayEquals(expectedOutput, output);
+    }
+
 }

@@ -12,7 +12,7 @@ public class Notebook {
         this.currentPage = currentPage;
     }
 
-    public void scroll() {
-        currentPage += 1;
+    public void scroll(int pages) {
+        currentPage += pages;
     }
 }

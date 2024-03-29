@@ -34,6 +34,17 @@ public class TestTask1Arcsin {
 
     @Test
     public void testArcsinOutOfRange() {
-        Task1Arcsin.arcsin(2, 10);
+        assertTrue(Double.isNaN(Task1Arcsin.arcsin(2, 10)));
     }
+
+    @Test
+    public void testArcsinOnePerSqrtOfTwo() {
+        assertEquals(Math.PI / 4, Task1Arcsin.arcsin(1/Math.sqrt(2), 10), DELTA);
+    }
+
+    @Test
+    public void testArcsinMinusOnePerSqrtOfTwo() {
+        assertEquals(-Math.PI / 4, Task1Arcsin.arcsin(-1/Math.sqrt(2), 10), DELTA);
+    }
+
 }

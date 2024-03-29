@@ -88,7 +88,7 @@ public class TestTask3 {
     }
 
     @Test
-    public void testScrollingOnePage() {
+    public void testScrollingOnePageByCaptain() {
         Notebook notebook = new Notebook();
         Captain captain = new Captain(50, "Captain", notebook);
 
@@ -97,7 +97,7 @@ public class TestTask3 {
     }
 
     @Test
-    public void testScrollingTenPages() {
+    public void testScrollingTenPagesByCaptain() {
         Notebook notebook = new Notebook();
         Captain captain = new Captain(50, "Captain", notebook);
 
@@ -106,7 +106,7 @@ public class TestTask3 {
     }
 
     @Test
-    public void testScrollingThreeTimes() {
+    public void testScrollingThreeTimesByCaptain() {
         Notebook notebook = new Notebook();
         Captain captain = new Captain(50, "Captain", notebook);
 
@@ -114,6 +114,34 @@ public class TestTask3 {
         captain.scrollNotebook(4);
         captain.scrollNotebook(4);
         assertEquals(notebook.getCurrentPage(), 12);
+    }
+
+    @Test
+    public void testScrollingOnePage() {
+        Notebook notebook = new Notebook();
+
+        notebook.scroll(1);
+        assertEquals(notebook.getCurrentPage(), 1);
+    }
+
+
+    @Test
+    public void testScrollingSixPages() {
+        Notebook notebook = new Notebook();
+
+        notebook.scroll(6);
+        assertEquals(notebook.getCurrentPage(), 6);
+    }
+
+
+    @Test
+    public void testScrollingThreeTimes() {
+        Notebook notebook = new Notebook();
+
+        notebook.scroll(3);
+        notebook.scroll(3);
+        notebook.scroll(3);
+        assertEquals(notebook.getCurrentPage(), 9);
     }
 
     @Test
