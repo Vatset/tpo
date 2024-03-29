@@ -1,6 +1,8 @@
+package test.Task1;
+
 import static org.junit.Assert.*;
 
-import Task1.Task1Arcsin;
+import main.Task1.Task1Arcsin;
 import org.junit.Test;
 
 public class TestTask1Arcsin {

@@ -1,4 +1,4 @@
-package Task3;
+package main.Task3;
 
 public class Humanoid {
 

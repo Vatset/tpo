@@ -1,4 +1,6 @@
-import Task2.Task2CountingSort;
+package test.Task2;
+
+import main.Task2.Task2CountingSort;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

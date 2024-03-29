@@ -1,4 +1,4 @@
-package Task3;
+package main.Task3;
 
 public class Vogon extends Humanoid {
 
@@ -9,10 +9,12 @@ public class Vogon extends Humanoid {
         captain.satisfy(10);
     }
 
-    public void grab(Humanoid first, Humanoid second) {
+    public boolean grab(Humanoid first, Humanoid second) {
         if (super.getStrength() > first.getStrength() + second.getStrength()) {
             first.beGrabbed();
             second.beGrabbed();
+            return true;
         }
+        return false;
     }
 }

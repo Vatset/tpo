@@ -1,4 +1,4 @@
-package Task3;
+package main.Task3;
 
 public class Captain extends Vogon {
 
@@ -18,7 +18,7 @@ public class Captain extends Vogon {
         this.satisfaction = satisfaction;
     }
 
-    public void satisfy(int value) {
+    protected void satisfy(int value) {
         satisfaction += value;
     }
 

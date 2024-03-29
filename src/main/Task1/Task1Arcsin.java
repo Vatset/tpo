@@ -1,4 +1,4 @@
-package Task1;
+package main.Task1;
 
 public class Task1Arcsin {
     public static double arcsin(double x, int n) {

@@ -1,4 +1,4 @@
-package Task2;
+package main.Task2;
 
 public class Task2CountingSort {
     private int[] array;
