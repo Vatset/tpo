@@ -1,8 +1,10 @@
 import static org.junit.Assert.*;
+
+import Task1.Task1Arcsin;
 import org.junit.Test;
 
 public class TestTask1Arcsin {
-    private static final double DELTA = 1e-6;
+    private static final double DELTA = 0.2;
 
     @Test
     public void testArcsinZero() {

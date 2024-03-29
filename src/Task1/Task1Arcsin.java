@@ -1,3 +1,5 @@
+package Task1;
+
 public class Task1Arcsin {
     public static double arcsin(double x, int n) {
         if (Math.abs(x) <= 1) {
