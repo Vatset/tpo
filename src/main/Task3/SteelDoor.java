@@ -13,11 +13,13 @@ public class SteelDoor {
     }
 
     public void open() {
+        if (isOpen) throw new IllegalStateException();
         System.out.println("Steel door was opened");
         isOpen = true;
     }
 
     public void close() {
+        if (!isOpen) throw new IllegalStateException();
         System.out.println("Steel door was closed");
         isOpen = false;
     }

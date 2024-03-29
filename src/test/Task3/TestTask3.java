@@ -69,16 +69,14 @@ public class TestTask3 {
     public void testOpeningWhenWasOpen() {
         SteelDoor steelDoor = new SteelDoor(true);
 
-        steelDoor.open();
-        assertTrue(steelDoor.isOpen());
+        assertThrows(IllegalStateException.class, steelDoor::open);
     }
 
     @Test
     public void testClosingWhenWasClosed() {
         SteelDoor steelDoor = new SteelDoor(false);
 
-        steelDoor.close();
-        assertFalse(steelDoor.isOpen());
+        assertThrows(IllegalStateException.class, steelDoor::close);
     }
 
     @Test
